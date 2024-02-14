@@ -1,0 +1,72 @@
+documentationUrl: https://open-meteo.com/en/docs
+connectionSpecification:
+  $schema: http://json-schema.org/draft-07/schema#
+  title: Open Meteo Spec
+  type: object
+  required: [latitude, longitude, daily, hourly]
+  properties: 
+    hourly: 
+      type: "array"
+      title: "Hourly Fields"
+      order: 1
+      items: 
+        type: "string"
+        enum: ["weather_code","temperature_2m","precipitation","relative_humidity_2m","dew_point_2m","apparent_temperature","precipitation_probability","rain","showers","snowfall","snow_depth","pressure_msl","surface_pressure","cloud_cover","cloud_cover_low","cloud_cover_mid","cloud_cover_high","visibility","evapotranspiration","et0_fao_evapotranspiration","vapour_pressure_deficit","wind_speed_10m","wind_speed_80m","wind_speed_120m","wind_speed_180m","wind_direction_10m","wind_direction_80m","wind_direction_120m","wind_direction_180m","wind_gusts_10m","temperature_80m","temperature_120m","temperature_180m","soil_temperature_0cm","soil_temperature_6cm","soil_temperature_18cm","soil_temperature_54cm","soil_moisture_0_to_1cm","soil_moisture_1_to_3cm","soil_moisture_3_to_9cm","soil_moisture_9_to_27cm","soil_moisture_27_to_81cm"]
+      examples: 
+        - "temperature_2m,precipitation"
+    daily:
+      type: "array"
+      title: "Daily Fields"
+      order: 0
+      items: 
+        type: "string"
+        enum: ["weather_code","temperature_2m_max","temperature_2m_min","precipitation_sum","apparent_temperature_max","apparent_temperature_min","sunrise","sunset","daylight_duration","sunshine_duration","uv_index_max","uv_index_clear_sky_max","rain_sum","showers_sum","snowfall_sum","precipitation_hours","precipitation_probability_max","wind_speed_10m_max","wind_gusts_10m_max","wind_direction_10m_dominant","shortwave_radiation_sum","et0_fao_evapotranspiration"]
+      examples: 
+        - "weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum"
+    latitude: 
+      type: number
+      examples: 
+        - "40.69299"
+    longitude: 
+      type: number
+      examples: 
+        - "-73.99077"
+    timezone: 
+      type: ["null", "string"]
+      definition: Timezone used for time field. 
+      enum: ["GMT", "America/Anchorage", "America/Los_Angeles", "America/Denver", "America/Chicago", "America/New_York", "America/Sao_Paulo", "Europe/London", "Europe/Berlin", "Europe/Moscow", "Africa/Cairo", "Asia/Bangkok", "Asia/Singapore", "Asia/Tokyo", "Australia/Sydney", "Pacific/Auckland"]
+      examples: 
+        - "Defaults to GMT if left empty"
+    forecast_days: 
+      type: ["null", "string"]
+      definition: Number of days for future forecast data
+      enum: ["1", "3", "7", "14", "16"]
+      default: "7"
+      examples: 
+        - "Defaults to 7 if left empty"
+    past_days: 
+      type: ["null", "string"]
+      definition: Number of days for past data
+      enum: ["0", "1", "2", "3", "5", "7", "14", "31", "61", "92"]
+      default: "0"
+      examples: 
+        - "Defaults to 0 if left empty"
+    temperature_unit: 
+      type: ["null", "string"]
+      definition: Unit for measuring temperature
+      enum: ["celsius", "fahrenheit"]
+      examples: 
+        - "Defaults to Celsius if left empty"
+    precipitation_unit: 
+      type: ["null", "string"]
+      definition: Unit for measuring precipitation
+      enum: ["millimeter", "inch"]
+      examples: 
+        - "Defaults to millimeter if left empty"
+    wind_speed_unit:
+      type: ["null", "string"]
+      definition: Unit for measuring wind speed
+      enum: ["km/h", "Mph", "m/s", "knots"]
+      examples: 
+        - "Defaults to km/h if left empty"
+  additionalProperties: true

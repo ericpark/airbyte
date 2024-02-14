@@ -1,0 +1,6 @@
+{
+    "daily":["weather_code", "precipitation_sum"],
+    "hourly":["weather_code"],
+    "latitude":-37.1, 
+    "longitude":70.6
+}

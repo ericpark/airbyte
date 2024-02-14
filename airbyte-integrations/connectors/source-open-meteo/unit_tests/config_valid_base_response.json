@@ -1,0 +1,27 @@
+{
+  "latitude": 52.52,
+  "longitude": 13.419998,
+  "generationtime_ms": 0.06103515625,
+  "utc_offset_seconds": 0,
+  "timezone": "GMT",
+  "timezone_abbreviation": "GMT",
+  "elevation": 38.0,
+  "daily_units": {
+    "time": "iso8601",
+    "weather_code": "wmo code",
+    "precipitation_sum": "mm"
+  },
+  "daily": {
+    "time": [
+      "2024-02-14",
+      "2024-02-15",
+      "2024-02-16",
+      "2024-02-17",
+      "2024-02-18",
+      "2024-02-19",
+      "2024-02-20"
+    ],
+    "weather_code": [80, 61, 61, 61, 3, 61, 3],
+    "precipitation_sum": [3.4, 2.1, 1.6, 0.6, 0.0, 5.7, 0.0]
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "daily":["weather_code"],
+    "hourly":["weather_code"],
+    "latitude":-137.1, 
+    "longitude":70.6
+}
