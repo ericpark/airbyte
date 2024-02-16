@@ -170,7 +170,7 @@ You've checked out the repo, implemented a million dollar feature, and you're re
 * Implement better error handling for over capacity runs. 
 * Implement incremental date range fetch (start date - end date) and refactor into incremental classes
 * Could add unit to data values as a separate column. 
-* Implement dynamic schema for new values (or implement remaining in json)
+* Implement dynamic schema for new values
 * Implement api-key for enterprise (if requested)
 * Add logic to make daily or hourly optional rather than have at least one field for each.
 

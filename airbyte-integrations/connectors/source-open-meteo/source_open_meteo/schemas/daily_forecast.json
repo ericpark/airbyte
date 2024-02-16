@@ -10,17 +10,27 @@
       "type": ["null", "string"],
       "format": "date-time"
     },
-    "weather_code": {
-      "type": ["null", "string"]
-    },
-    "temperature_2m_min": {
-      "type": ["null", "number"]
-    },
-    "temperature_2m_max": {
-      "type": ["null", "number"]
-    },
-    "precipitation_sum": {
-      "type": ["null", "number"]
-    }
+    "weather_code": {"type": ["null", "string"]},
+    "temperature_2m_max": {"type": ["null", "number"]},
+    "temperature_2m_min": {"type": ["null", "number"]},
+    "precipitation_sum": {"type": ["null", "number"]},
+    "apparent_temperature_max": {"type": ["null", "number"]},
+    "apparent_temperature_min": {"type": ["null", "number"]},
+    "sunrise": {"type": ["null", "number"]},
+    "sunset": {"type": ["null", "number"]},
+    "daylight_duration": {"type": ["null", "number"]},
+    "sunshine_duration": {"type": ["null", "number"]},
+    "uv_index_max": {"type": ["null", "number"]},
+    "uv_index_clear_sky_max": {"type": ["null", "number"]},
+    "rain_sum": {"type": ["null", "number"]},
+    "showers_sum": {"type": ["null", "number"]},
+    "snowfall_sum": {"type": ["null", "number"]},
+    "precipitation_hours": {"type": ["null", "number"]},
+    "precipitation_probability_max": {"type": ["null", "number"]},
+    "wind_speed_10m_max": {"type": ["null", "number"]},
+    "wind_gusts_10m_max": {"type": ["null", "number"]},
+    "wind_direction_10m_dominant": {"type": ["null", "number"]},
+    "shortwave_radiation_sum": {"type": ["null", "number"]},
+    "et0_fao_evapotranspiration": {"type": ["null", "number"]}
   }
 }

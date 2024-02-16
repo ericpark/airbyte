@@ -24,11 +24,11 @@ connectionSpecification:
       examples: 
         - "weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum"
     latitude: 
-      type: number
+      type: "number"
       examples: 
         - "40.69299"
     longitude: 
-      type: number
+      type: "number"
       examples: 
         - "-73.99077"
     timezone: 
